@@ -19,6 +19,7 @@ Things you need to launch application
 brew install node@8.9.0
 brew install yarn
 brew install watchman
+npm install -g react-native react-native-cli
 xcode version 9.4 or newer (https://itunes.apple.com/us/app/xcode/id497799835?mt=12
 
 --Taken from (https://facebook.github.io/react-native/docs/getting-started.html)
