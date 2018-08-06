@@ -42,6 +42,9 @@ open xcode
 $ yarn start 
 
 ```
+open a separate terminal 
+
+```
 $ react-native run-ios
 
 ```
