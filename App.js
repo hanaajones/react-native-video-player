@@ -24,7 +24,7 @@ class App extends Component<props> {
 
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>HANA'S VIDEO PLAYER</Text>
+        {/* <Text style={styles.welcome}>HANA'S VIDEO PLAYER</Text> */}
       <VideoPlayer 
         configs={configs} 
         updateProgress={updateProgress}
@@ -42,6 +42,7 @@ class App extends Component<props> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    marginTop: 150,
     justifyContent: 'center',
     alignItems: 'center'
   },
