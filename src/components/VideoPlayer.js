@@ -8,8 +8,6 @@ class VideoPlayer extends React.Component {
     super(props)
   }
 
-
-
   render() {
     return (
         <YouTube 
@@ -22,8 +20,6 @@ class VideoPlayer extends React.Component {
           onProgress={e => this.props.updateProgress(e.currentTime, e.duration)}
           style={{ alignSelf: 'stretch', height: 300 }}
         /> 
-        
-
     );
   }
 }

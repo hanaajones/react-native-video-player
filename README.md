@@ -1,6 +1,6 @@
 # react-native-video-player
 
-IOS react-native app rendering GNARBOX 2.0 Kickstarter video and using external controllers 
+IOS react-native app rendering a Kickstarter video and using external controllers 
 
 ## Getting Started
 

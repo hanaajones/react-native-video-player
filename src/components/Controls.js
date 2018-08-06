@@ -20,7 +20,7 @@ class Controls extends React.Component{
     return (
       <View style={styles.container}>
         <View style={styles.controllers}>
-        <View style={styles.iconContainer}>
+        <View>
           <Icon 
             name='chevron-left' 
             onPress={() => this.props.configs.video.seekTo(this.props.configs.progress - 20)}  
@@ -37,7 +37,7 @@ class Controls extends React.Component{
             style={styles.play}
           />
         </View>
-        <View style={styles.iconContainer}>
+        <View>
           <Icon 
             name='chevron-right' 
             onPress={() => this.props.configs.video.seekTo(this.props.configs.progress + 20)}  
@@ -59,8 +59,6 @@ class Controls extends React.Component{
 
 const styles = StyleSheet.create({
   container: {
-    // justifyContent: 'center',
-    // alignItems: 'center',
     flex:1
   },
   controllers: {
@@ -70,15 +68,11 @@ const styles = StyleSheet.create({
     flex:1,
     justifyContent: 'center'
   },
-  iconContainer: {
-    
-  },
   chevronLeft: {
     margin: 10,
     alignSelf: 'flex-start'
   },
   play: {
-    // marginLeft: 5,
     margin: 10,
     alignSelf: 'center'
   },
@@ -89,7 +83,6 @@ const styles = StyleSheet.create({
   seek: {
     fontSize: 10,
     textAlign: 'center'
-
   },
   progressBar: {
     marginTop: 15,
