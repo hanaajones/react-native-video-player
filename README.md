@@ -52,8 +52,6 @@ End with an example of getting some data out of the system or using it for a lit
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* To Rubios, your burritos are always amazing
 
 
