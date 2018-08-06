@@ -44,12 +44,7 @@ const styles = StyleSheet.create({
     marginTop: 125,
     justifyContent: 'center',
     alignItems: 'center'
-  },
-  welcome: {
-    margin: 10,
-    marginTop: 100
   }
-
 });
 
 function mapStateToProps (state) {

@@ -1,8 +1,6 @@
-export function togglePlaying() {
-  return {
+export const togglePlaying = () => ({
     type: 'TOGGLE_PLAYING'
-  }
-}
+});
 
 export const updateProgress = (progress, duration) => ({
   type: 'UPDATE_PROGRESS',
