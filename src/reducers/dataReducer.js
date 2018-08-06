@@ -1,7 +1,8 @@
 const initialState = {
   playing: true,
-  duration: undefined,
-  progress: 0
+  duration: 0,
+  progress: 0,
+  percentage: 0
 }
 
 
@@ -14,9 +15,9 @@ export default function dataReducer (state = initialState, action) {
       }
 
     case 'UPDATE_PROGRESS':
-    console.log(action);
       state.duration = action.duration;
       state.progress = action.progress;
+      state.percentage = action.progress/action.duration
       return {
         ...state
       }
