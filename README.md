@@ -1,6 +1,6 @@
 # react-native-video-player
 
-IOS react-native app rendering GNARBOX 2.0 Kickstarter video and using external controls 
+IOS react-native app rendering GNARBOX 2.0 Kickstarter video and using external controllers 
 
 ## Getting Started
 
@@ -14,7 +14,7 @@ What things you need to install the software and how to install them
 
 node v8.9.0
 yarn 1.9.4
-xcode
+xcode (https://itunes.apple.com/us/app/xcode/id497799835?mt=12
 
 ```
 
