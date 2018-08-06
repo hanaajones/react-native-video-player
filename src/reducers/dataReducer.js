@@ -17,14 +17,13 @@ export default function dataReducer (state = initialState, action) {
     case 'UPDATE_PROGRESS':
       state.duration = action.duration;
       state.progress = action.progress;
-      state.percentage = action.progress/action.duration
+      state.percentage = action.progress/action.duration;
       return {
         ...state
       }
     
     case 'SET_VIDEO':
-      state.video = action.video
-      console.log('hi from set Video', action.video)
+      state.video = action.video;
       return {
         ...state
       }
