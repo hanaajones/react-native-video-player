@@ -24,7 +24,6 @@ class App extends Component<props> {
 
     return (
       <View style={styles.container}>
-        {/* <Text style={styles.welcome}>HANA'S VIDEO PLAYER</Text> */}
       <VideoPlayer 
         configs={configs} 
         updateProgress={updateProgress}

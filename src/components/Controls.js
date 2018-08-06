@@ -10,7 +10,6 @@ import YouTube from 'react-native-youtube';
 class Controls extends React.Component{
   constructor(props) {
     super(props)
-
   }
 
   render() {

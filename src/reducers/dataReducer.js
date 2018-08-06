@@ -6,7 +6,6 @@ const initialState = {
   percentage: 0
 }
 
-
 export default function dataReducer (state = initialState, action) {
   switch (action.type) {
     case 'TOGGLE_PLAYING':
