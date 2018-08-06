@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
 import { TouchableHighlight, StyleSheet, Text, View} from 'react-native';
-import YouTube from 'react-native-youtube'
-import VideoPlayer from './src/components/VideoPlayer'
-import Controls from './src/components/Controls'
+
+import YouTube from 'react-native-youtube';
+import VideoPlayer from './src/components/VideoPlayer';
+import Controls from './src/components/Controls';
+
 
 import { connect } from 'react-redux'
-import { togglePlaying, updateProgress } from './src/actions/actions'
+import { togglePlaying, updateProgress, setVideo } from './src/actions/actions'
 
 type Props = {}
 class App extends Component<props> {
@@ -16,15 +18,17 @@ class App extends Component<props> {
     const {
       configs,
       togglePlaying,
-      updateProgress
+      updateProgress,
+      setVideo
     } = this.props;
 
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to Hana's Video Player</Text>
+        <Text style={styles.welcome}>HANA'S VIDEO PLAYER</Text>
       <VideoPlayer 
         configs={configs} 
         updateProgress={updateProgress}
+        setVideo={setVideo}
       />
       <Controls 
         togglePlaying={togglePlaying} 
@@ -39,19 +43,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    alignItems: 'center'
   },
   welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+    margin: 10
+  }
+
 });
 
 function mapStateToProps (state) {
@@ -63,7 +60,8 @@ function mapStateToProps (state) {
 function mapDispatchToProps (dispatch) {
   return {
     togglePlaying: () => dispatch(togglePlaying()),
-    updateProgress: (progress, duration) => dispatch(updateProgress(progress, duration))
+    updateProgress: (progress, duration) => dispatch(updateProgress(progress, duration)),
+    setVideo: (video) => dispatch(setVideo(video))
   }
 }
 

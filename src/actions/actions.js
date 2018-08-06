@@ -10,4 +10,9 @@ export const updateProgress = (progress, duration) => ({
   duration
 });
 
+export const setVideo = (video) => ({
+  type: 'SET_VIDEO',
+  video
+});
+
 
