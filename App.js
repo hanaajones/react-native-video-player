@@ -41,7 +41,7 @@ class App extends Component<props> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: 150,
+    marginTop: 125,
     justifyContent: 'center',
     alignItems: 'center'
   },
