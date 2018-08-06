@@ -46,7 +46,8 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   welcome: {
-    margin: 10
+    margin: 10,
+    marginTop: 100
   }
 
 });

@@ -27,6 +27,7 @@ class Controls extends React.Component{
             size={30} 
             style={styles.chevronLeft}
           />
+          <Text style={styles.seek}>R 20s</Text>
         </View>
         <View style={styles.iconContainer}>
           <Icon 
@@ -43,6 +44,7 @@ class Controls extends React.Component{
             size={30} 
             style={styles.chevronRight}
           />
+          <Text style={styles.seek}>F 20s</Text>
         </View>
 
           <View style={styles.progressContainer}>
@@ -62,6 +64,7 @@ const styles = StyleSheet.create({
     flex:1
   },
   controllers: {
+    marginTop: 10,
     flexDirection:'row',
     flexWrap: 'wrap',
     flex:1,
@@ -75,6 +78,7 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-start'
   },
   play: {
+    // marginLeft: 5,
     margin: 10,
     alignSelf: 'center'
   },
@@ -82,10 +86,13 @@ const styles = StyleSheet.create({
     margin: 10,
     alignSelf: 'flex-end'
   },
+  seek: {
+    fontSize: 10,
+    textAlign: 'center'
+
+  },
   progressBar: {
-    flexDirection: 'column',
     marginTop: 15,
-    alignItems: 'center'
   },
   progress: {
     fontSize: 10,
