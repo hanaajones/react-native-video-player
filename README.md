@@ -12,9 +12,13 @@ What things you need to install the software and how to install them
 
 ```
 
-node v8.9.0
-yarn 1.9.4
-xcode (https://itunes.apple.com/us/app/xcode/id497799835?mt=12
+brew install node@8.9.0
+brew install yarn
+brew install watchman
+xcode version 9.4 or newer (https://itunes.apple.com/us/app/xcode/id497799835?mt=12
+
+--Taken from (https://facebook.github.io/react-native/docs/getting-started.html)
+You will also need to install the Xcode Command Line Tools. Open Xcode, then choose "Preferences..." from the Xcode menu. Go to the Locations panel and install the tools by selecting the most recent version in the Command Line Tools dropdown.
 
 ```
 
