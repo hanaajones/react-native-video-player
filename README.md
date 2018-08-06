@@ -4,11 +4,15 @@ IOS react-native app rendering GNARBOX 2.0 Kickstarter video and using external 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+You'll want to make sure your version of node is compatible with React Native. Version 8.9.0 seemed to have the least amount of issues. 
+
+Download your technologies and then run the commands in your command line.
+
+Have fun with my app! 
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Things you need to launch application 
 
 ```
 
